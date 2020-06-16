@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parser": "",
+  "rules": {
+    "semi": "off",
+    "arrow-parens": "off",
+    "comma-dangle": "off"
+  }
+}
