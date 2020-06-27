@@ -1,32 +1,18 @@
 {
-  "name": "tablets-like-excel",
-  "version": "1.0.0",
-  "description": "native JS project",
-  "main": "webpack.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=production webpack --mode production",
-    "node": "node dist/bundle.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jsScriptist/tables-like-excel.git"
-  },
   "author": "Andrii Khomenko <khomenkoam07@gmail.com>",
-  "license": "ISC",
+  "browserslist": "> 0.25%, not dead",
   "bugs": {
     "url": "https://github.com/jsScriptist/tables-like-excel/issues"
   },
-  "homepage": "https://github.com/jsScriptist/tables-like-excel#readme",
-  "keywords": [
-    "js",
-    "webpack"
-  ],
-  "private": true,
-  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "@babel/polyfill": "^7.10.1",
+    "material-design-icons": "^3.0.1",
+    "normalize.css": "^8.0.1"
+  },
+  "description": "native JS project",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -45,9 +31,24 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-    "@babel/polyfill": "^7.10.1",
-    "material-design-icons": "^3.0.1",
-    "normalize.css": "^8.0.1"
-  }
+  "homepage": "https://github.com/jsScriptist/tables-like-excel#readme",
+  "keywords": [
+    "js",
+    "webpack"
+  ],
+  "license": "ISC",
+  "main": "webpack.config.js",
+  "name": "tablets-like-excel",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsScriptist/tables-like-excel.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "node": "node dist/bundle.js"
+  },
+  "version": "1.0.0"
 }
